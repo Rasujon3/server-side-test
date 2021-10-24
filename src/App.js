@@ -12,7 +12,10 @@ class App extends Component {
     // axios.post('http://localhost:5000/dishes', { name: "Pizza", price: "799" })
     //   .then(response => console.log(response))
 
-    axios.put('http://localhost:5000/dishes/1', { name: "Pizza", price: "250" })
+    // axios.put('http://localhost:5000/dishes/1', { name: "Pizza", price: "250" })
+    //   .then(response => console.log(response))
+
+    axios.delete('http://localhost:5000/dishes/0')
       .then(response => console.log(response))
 
   }
