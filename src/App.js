@@ -1,17 +1,13 @@
-import fetch from 'cross-fetch';
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 
 class App extends Component {
   componentDidMount() {
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    //   .then(response => response.json())
-    //   .then(data => console.log(data));
-
-    axios.get('https://jsonplaceholder.typicode.com/posts')
+    axios.get('http://localhost:5000/dishes')
       .then(response => response.data)
       .then(data => console.log(data))
+      .catch(error => console.log(error.message));
   }
   render() {
     return (
