@@ -9,7 +9,10 @@ class App extends Component {
     //   .then(data => console.log(data))
     //   .catch(error => console.log(error.message));
 
-    axios.post('http://localhost:5000/dishes', { name: "Pizza", price: "799" })
+    // axios.post('http://localhost:5000/dishes', { name: "Pizza", price: "799" })
+    //   .then(response => console.log(response))
+
+    axios.put('http://localhost:5000/dishes/1', { name: "Pizza", price: "250" })
       .then(response => console.log(response))
 
   }
